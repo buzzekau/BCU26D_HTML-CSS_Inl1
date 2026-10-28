@@ -14,9 +14,11 @@ Detta repo innehåller en portfölj som visar projekt och information om förfat
 - Du har inte med samtliga moment från kravlistan
 - Det finns ingen CSS implementerad
 - Sidan skalar inte sömlöst mellan mobil-, tablet- och desktop-läge
+
 **För G**
 - Du har skrivit HTML, men koden innehåller en del brister, t.ex. indenteringsfel eller felaktig syntax.
 - Du har skrivit CSS, men koden innehåller en del brister, t.ex. indenteringsfel eller felaktig syntax.
+
 **För VG**
 - Du har tillgänglighetsgranskat din sida
 - Din CSS är genomarbetad och ambitiös. Du visar på en djupare förståelse för CSS.
