@@ -13,10 +13,10 @@ Detta arkiv innehåller en portfölj som visar projekt och information om förfa
 
 - En bild med tillhörande korrekta attribut inkl. alt-text, höjd, bredd, etc.
 - En navigation/meny (behöver ej gå att klicka på)
-- En "huvudsektion" med själva innehållet på sidan (dvs. '<main>')
+- En "huvudsektion" med själva innehållet på sidan (dvs. `<main>`)
 - Tre "projekt", dessa kan vara dummies/placeholders om du inte har någonting nu.
-- Ett sidofält med information ("<aside>")
-- Rubriker på minst 3 nivåer, dvs. "<h1>, <h2>, <h3>"
+- Ett sidofält med information (`<aside>`)
+- Rubriker på minst 3 nivåer, dvs. `<h1>, <h2>, <h3>`
 - En länk till en extern webbplats
 - Sidan ska fungera på både mobil, tablet och desktop (dvs. ska skala "sömlöst" mellan de olika upplösningarna)
 - Ett kontaktformulär som innehåller "kontaktsökarens": namn, e-post, webbplats, telefonnummer, en dropdown, en checkbox och ett textfält för paragraftext (textarea) och en skicka-knapp
