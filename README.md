@@ -45,6 +45,8 @@ Detta repo innehåller en portfölj som visar projekt och information om förfat
 - I mappen `.github` finns även instruktioner för hur CoPilot ska ge feedback på koden.
 
 ## Att göra
-- [ ] Tillgänglighet och tillgänglighetsanalys
-- [ ] [Validering](https://validator.w3.org/detailed.html) 
+- [ ] Skiss av projektet
+- [ ] Tillgänglighet och tillgänglighetsanalys & inkludera skärmdumpar på godkänt resultat
+- [ ] Chrome Lighthouse / Firefox Accessibility Tools
+- [ ] Validering via [W3C HTML Validator](https://validator.w3.org/detailed.html)
 - [ ] Formatering på koden
