@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with semantic HTML5 and custom CSS. Designed to showcase developer projects, academic background, and technical blog articles while seeking a *LIA (Internship) for Autumn 2027*. 
 
-[Link to Live Site on GitHub Pages](#)
+[Link to Live Site on GitHub Pages](https://buzzekau.github.io/BCU26D_HTML-CSS_Inl1/)
 
 ## Wireframes
 I started with creating wireframes for mobile and desktop versions to have a visual orientiation.
