@@ -6,8 +6,8 @@ A modern, responsive personal portfolio website built with semantic HTML5 and cu
 
 ## Wireframes
 I started with creating wireframes for mobile and desktop versions to have a visual orientiation.
-<img width="903" height="2048" alt="image" src="https://github.com/user-attachments/assets/257da90d-7cfd-4ba0-85b6-e1b58c594584" />
-<img width="1442" height="2048" alt="image" src="https://github.com/user-attachments/assets/23816bf1-7cc7-43fd-8ed2-e9f26079eb68" />
+<img width="450" height="1024" alt="image" src="assets/mobile-wireframe-architecture.png" />
+<img width="700" height="1024" alt="image" src="assets/desktop-wireframe-architecture.png" />
 
 ## 🛠️ Tech Stack & Key Features 
 - **Frontend**: HTML5 (Semantic Architecture), CSS3 (Flexbox & CSS Grid)
