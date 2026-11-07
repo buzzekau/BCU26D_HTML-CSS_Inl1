@@ -1,3 +1,95 @@
+/* ==========================================================
+   CSS CUSTOM PROPERTIES
+   ========================================================== */
+
+:root {
+    /* Typography & Base Scale */
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-size: 1rem;
+    --line-height: 1.5;
+
+    /* Brand & Primary Accent Colors (10% Focus) */
+    --color-primary: #26ce61;
+    --color-primary-hover: #1fba54;
+    --color-primary-dark: #15803d;
+
+    /* Surface & Canvas Colors (60% Dominant) */
+    --color-background-main: #f8f9fa;
+    --color-background-surface: #ffffff;
+    --color-border: #e2e8f0;
+
+    /* Text & Content Colors (30% Supporting) */
+    --color-text-main: #0f172a;
+    --color-text-muted: #475569;
+
+    /* Special Feature Surfaces (LIA Internship Banner) */
+    --color-lia-background: #fffbe6;
+    --color-lia-border: #fde68a;
+    --color-lia-text: #78350f;
+
+    /*spacing */
+    --spacing-unit: 8px;
+    --border-radius: 4px;
+    --transition-duration: 0.3s;
+}
+
+/* ==========================================================
+   GLOBAL STYLES
+   ========================================================== */
+
+/* Global Box Model & Margin/Padding Reset */
+*, 
+*::before, 
+*::after { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth Scrolling for Internal Navigation */
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+/* Body Setup */
+body {
+    min-height: 100vh;
+    line-height: var(--line-height);
+    font-size: var(--font-size);
+    font-family:  var(--font-family);
+    background-color: var(--color-background-main, #f8f9fa);
+    color: var(--color-text-main, #222222);
+}   
+
+/* Media Elements (Prevents Layout Shifts & Overflow) */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form Controls & Typography Inheritance */
+input, 
+button, 
+textarea, 
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/* List Formatting Reset */
+ul {
+    list-style: none;
+}   
+
+/* Link Reset */
+a {
+    color: inherit;
+    text-decoration: none;
+}   
+
+/* Hides text visually but keeps it available for screen readers */
 .visually-hidden { 
     position: absolute; 
     width: 1px; 
@@ -7,4 +99,5 @@
     overflow: hidden; 
     clip: rect(0, 0, 0, 0); 
     white-space: nowrap; 
-    border: 0; }
+    border: 0; 
+}
