@@ -1,10 +1,11 @@
 /* ==========================================================
-   CSS CUSTOM PROPERTIES
+   CSS CUSTOM PROPERTIES (:ROOT VARIABLES)
    ========================================================== */
 
 :root {
     /* Typography & Base Scale */
-    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, 'Helvetica Neue', Arial, sans-serif;
     --font-size: 1rem;
     --line-height: 1.5;
 
@@ -100,4 +101,62 @@ a {
     clip: rect(0, 0, 0, 0); 
     white-space: nowrap; 
     border: 0; 
+}
+
+/* ==========================================================
+   HEADER & NAVIGATION STYLES
+   ========================================================== */
+
+/* Sticky Header Container */
+.site-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-unit);
+    padding: var(--spacing-unit);
+    background-color: var(--color-background-surface, #ffffff);
+    border-bottom: 1px solid var(--color-border, #e2e8f0);
+   }
+
+/* Header Title (h1) */
+.site-header h1 { 
+    font-size: calc(var(--font-size) * 1.5); 
+    font-weight: 700; 
+    color: var(--color-text-main, #0f172a); 
+    text-align: center; 
+}
+
+/* Navigation List Container */
+   .site-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-unit);
+   }
+
+/* Navigation Links */
+.site-header nav a {
+    display: inline-block;
+    padding: calc(var(--spacing-unit) * 1.25);
+    font-size: var(--font-size);
+    font-weight: 500;
+    color: var(--color-text-muted, #475569);
+    transition: color var(--transition-duration, 0.3s) ease, 
+        background-color var(--transition-duration, 0.3s) ease;
+}
+
+/* Navigation Links Hover & Focus States */
+.site-header nav a:hover {
+    color: var(--color-text-main, #0f172a);
+    background-color: var(--color-primary-hover, #1fba54);
+    border-radius: var(--border-radius, 4px);
+}
+
+.site-header nav a:focus-visible {
+    outline: 2px solid var(--color-text-main, #0f172a);
+    outline-offset: 2px;
 }
