@@ -45,17 +45,17 @@ Denna webbplats är utvecklad som del av Inlämningsuppgift 1 i kursen **HTML & 
 - Du kan motivera ev. lösningar som inte följer praxis. Lämna t.ex. en kommentar i koden om varför du har valt att göra på ett visst sätt.
 
 ### ✅ Kravlista
-- [ ] En bild med tillhörande korrekta attribut inkl. alt-text, höjd, bredd, etc.
+- [x] En bild med tillhörande korrekta attribut inkl. alt-text, höjd, bredd, etc.
 - [ ] En navigation/meny (behöver ej gå att klicka på)
 - [ ] En "huvudsektion" med själva innehållet på sidan (dvs. `<main>`)
 - [ ] Tre "projekt", dessa kan vara dummies/placeholders om du inte har någonting nu.
-- [ ] Ett sidofält med information (`<aside>`)
-- [ ] Rubriker på minst 3 nivåer, dvs. `<h1>, <h2>, <h3>`
-- [ ] En länk till en extern webbplats
+- [x] Ett sidofält med information (`<aside>`)
+- [x] Rubriker på minst 3 nivåer, dvs. `<h1>, <h2>, <h3>`
+- [x] En länk till en extern webbplats
 - [ ] Sidan ska fungera på både mobil, tablet och desktop (dvs. ska skala "sömlöst" mellan de olika upplösningarna)
-- [ ] Ett kontaktformulär som innehåller "kontaktsökarens": namn, e-post, webbplats, telefonnummer, en dropdown, en checkbox och ett textfält för paragraftext (textarea) och en skicka-knapp
+- [x] Ett kontaktformulär som innehåller "kontaktsökarens": namn, e-post, webbplats, telefonnummer, en dropdown, en checkbox och ett textfält för paragraftext (textarea) och en skicka-knapp
 - [ ] Kontaktuppgifter till dig
-- [ ] En sidfot
+- [x] En sidfot
 
 ### :card_file_box: Filer
 - `.gitignore` - Denna fil används för att ignorera/exkludera vissa systemfiler som inte behöver komma med i versionshanteringen. En sådan bör man alltid ha i sitt repo.
