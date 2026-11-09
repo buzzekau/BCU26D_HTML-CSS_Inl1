@@ -104,7 +104,7 @@ a {
 }
 
 /* ==========================================================
-   GLOBAL HEADER &SECTION STYLES
+   GLOBAL HEADER & SECTION STYLES
    ========================================================== */
 
 /* Header Title (h1) */
@@ -114,6 +114,14 @@ a {
     color: var(--color-text-main, #0f172a);
     margin-bottom: var(--spacing-unit);
     text-align: center; 
+}
+
+/* Section Styling */
+.blog-section,
+.projects-section,
+.academic-section,
+.contact-section {
+    margin: calc(var(--spacing-unit) * 4) 0;
 }
 
 /* Section Title Styling */
@@ -153,7 +161,8 @@ h3 {
 
 /* Paragraph Styling */
 p {
-      margin-bottom: calc(var(--spacing-unit) * 1.5);
+    color: var(--color-text-muted, #475569);
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
 }
 
 /* Link Styling */
@@ -266,13 +275,278 @@ a:focus-visible {
 }
 
 /* ==========================================================
-   BLOG POSTS SECTION STYLES
+   BLOG POSTS & PROJECTS SECTION STYLES
    ========================================================== */
 
-/* Blog Post Container Styling */
-.blog-post {
+/* Container Styles */
+.blog-posts,
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: calc(var(--spacing-unit) * 2);
+    margin-top: calc(var(--spacing-unit) * 2);
+}
+
+/* Item Styling */
+.blog-post,
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--color-background-surface, #ffffff);
     border: 1px solid var(--color-border, #e2e8f0);
     border-radius: var(--border-radius, 4px);
     padding: calc(var(--spacing-unit) * 2);
+}
+
+/* Image Styling */
+.blog-post img,
+.project img {
+    border-radius: var(--border-radius, 4px);
+    object-fit: cover;
+    margin-bottom: calc(var(--spacing-unit) * 1.5);
+}
+
+/* Tags Styling */
+.blog-post-tags,
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--spacing-unit) * 0.5);
+    margin: calc(var(--spacing-unit) * 1) 0;
+}
+
+/* Project Tag Styling */
+.blog-post-tags li,
+.project-tags li {
+    font-size: calc(var(--font-size) * 0.875);
+    background-color: var(--color-primary, #26ce61);
+    color: var(--color-text-main, #0f172a);
+    padding: calc(var(--spacing-unit) * 0.5) calc(var(--spacing-unit) * 1);
+    border-radius: var(--border-radius, 4px);
+}
+
+/* Link Alignment */
+.blog-post-link,
+.project-link {
+      align-self: flex-start;
+}
+
+/* ==========================================================
+   TECH STACK SECTION STYLES
+   ========================================================== */
+
+/* Skill Group Styling */
+.skill-group {
+    background-color: var(--color-background-surface, #ffffff);
+    border: 1px solid var(--color-border, #e2e8f0);
+    border-radius: var(--border-radius, 4px);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--spacing-unit) * 0.5);
+}
+
+/* Skill List Styling */
+.skill-list li {
+    background-color: var(--color-primary, #26ce61);
+    color: var(--color-text-main, #0f172a);
+    padding: calc(var(--spacing-unit) * 0.5) calc(var(--spacing-unit) * 1);
+    border-radius: var(--border-radius, 4px);
+    margin-bottom: var(--spacing-unit);
+}
+
+/* ==========================================================
+   ACADEMIC SECTION STYLES
+   ========================================================== */
+
+/* Academic List Container */
+.academic-list {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-unit) * 2);
+    margin-top: calc(var(--spacing-unit) * 2);
+}
+
+/* Academic Item Styling */
+.academic-item {
+    background-color: var(--color-background-surface, #ffffff);
+    border: 1px solid var(--color-border, #e2e8f0);
+    border-radius: var(--border-radius, 4px);
+    padding: calc(var(--spacing-unit) * 2);
+    border-left: 4px solid var(--color-primary, #26ce61);
+}
+
+/* Academic Institution Styling */
+.academic-institution {
+    font-weight: 600;
+    margin-bottom: var(--spacing-unit);
+}
+
+/* Academic Duration Styling */
+.academic-duration {
+    font-size: calc(var(--font-size) * 0.875);
+    margin-bottom: 0;
+}
+
+/* ==========================================================
+   SIDEBAR STYLES
+   ========================================================== */
+
+/* Sidebar Container */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-unit) * 3);
+    margin: calc(var(--spacing-unit) * 4) 0;
+}
+
+/* Sidebar Content Styling */
+.sidebar-content {
+    background-color: var(--color-background-surface, #ffffff);
+    border: 1px solid var(--color-border, #e2e8f0);
+    border-radius: var(--border-radius, 4px);
+    padding: calc(var(--spacing-unit) * 2);
+}
+
+/* Social Links Container */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(var(--spacing-unit) * 1.5);
+}   
+
+/* ==========================================================
+   CONTACT FORM STYLES
+   ========================================================== */
+
+/* Contact Form Container */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-background-surface, #ffffff);
+    border: 1px solid var(--color-border, #e2e8f0);
+    border-radius: var(--border-radius, 4px);
+    padding: calc(var(--spacing-unit) * 3);
+   }
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-unit) * 0.5);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+/* Form Label Styling */
+.form-group label {
+    font-size: calc(var(--font-size) * 0.95);
+    font-weight: 600;
+    color: var(--color-text-main, #0f172a);
+}
+
+/* Required Field Indicator Styling */
+.form-group:has(:required) label::after {
+    content: " *";
+    font-weight: 700;
+    color: var(--color-primary, #26ce61);
+}
+
+/* Form Input, Select, and Textarea Styling */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: calc(var(--spacing-unit) * 0.75);
+    border: 1px solid var(--color-border, #e2e8f0);
+    border-radius: var(--border-radius, 4px);
+}
+
+/* Form Input, Select, and Textarea Focus Styling */
+:focus-visible {
+    outline: 2px solid var(--color-primary-hover, #1fba54);
+    outline-offset: 2px;
+}
+
+/* Form Group Styling for Consent Checkbox */
+.form-group:has(#consent) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: calc(var(--spacing-unit) * 0.5);
+}
+
+/* Form Group Label Styling for Consent Checkbox */
+.form-group:has(#consent) label {
+    order: 2;
+}
+
+/* Form Group Input Styling for Consent Checkbox */
+.form-group:has(#consent) input {
+    order: 1;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Form Group Privacy Note Styling for Consent Checkbox */
+.privacy-note {
+    order: 3;
+    width: 100%;
+    font-size: calc(var(--font-size) * 0.875);
+    color: var(--color-text-muted, #475569);
+    margin: calc(var(--spacing-unit) * 0.5) 0;
+    margin-bottom: 0;
+}
+
+/* Contact Form Button Styling */
+.contact-form button {
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    background-color: var(--color-primary, #26ce61);
+    color: var(--color-text-main, #0f172a);
+    padding: calc(var(--spacing-unit) * 1.5);
+    border: none;
+    border-radius: var(--border-radius, 4px);
+    cursor: pointer;
+    transition: background-color var(--transition-duration, 0.3s) ease;
+}
+
+/* Contact Form Button Hover Styling */
+.contact-form button:hover {
+    background-color: var(--color-primary-hover, #1fba54);
+}
+
+/* Contact Form Button Focus Styling */
+.contact-form button:focus-visible {
+    outline: 2px solid var(--color-primary-hover, #1fba54);
+    outline-offset: 2px;
+}
+
+/* ==========================================================
+   FOOTER STYLES
+   ========================================================== */
+
+/* Footer Container Styling */
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--spacing-unit) * 0.75);
+    text-align: center;
+    margin-top: calc(var(--spacing-unit) * 6);
+    padding: calc(var(--spacing-unit) * 3);
+    background-color: var(--color-background-surface, #ffffff);
+    border-top: 1px solid var(--color-border, #e2e8f0);
+}
+
+.site-footer p {
+    font-size: calc(var(--font-size) * 0.875);
+    color: var(--color-text-muted, #475569);
+    margin-bottom: 0;
 }
