@@ -13,37 +13,38 @@
         <h1>Jens Rinnelt Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#hero-section">About</a></li>
+                <li><a href="#hero-section">About Me</a></li>
                 <li><a href="#blog-section">Blog Posts</a></li>
                 <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#tech-stack-section">Tech Stack</a></li>
                 <li><a href="#academic-section">Education</a></li>
                 <li><a href="#contact-section">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- LIA Banner -->
-    <aside class="lia-banner">
-        <p>
-            I am looking for a LIA (internship paid for by swedish government) in the Web3 space for autumn 2027.
-            If you have a Full-Stack / Blockchain Developer opportunity, please reach out to me via 
-            <a href="https://www.linkedin.com/in/jensrinnelt/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-        </p>
-    </aside>
-    
-    <!-- About Me -->
-    <section id="hero-section" class="hero-section">
-        <h2 class="section-title">Jens Rinnelt</h2>
-        <h3 class="section-subtitle">Blockchain Developer | Full-Stack Developer | Web3 Enthusiast</h3>
-        <p class="section-description">
-            I am a passionate Web3 developer with a strong interest in blockchain technology and full-stack development.
-            Currently studying to become a certified Blockchain Developer at 
-            <a href="https://medieinstitutet.se/utbildningar/blockchainutvecklare/" target="_blank" rel="noopener noreferrer">Medieinstitutet</a> in Sweden. 
-        </p>
-        <img src="assets/images/jens-rinnelt-profile-picture.jpg" alt="Jens Rinnelt smiling into the camera" width="200" height="200" loading="lazy">
-    </section>
-
+  
     <main>
+        <!-- LIA Banner -->
+        <aside class="lia-banner">
+            <p>
+                I am looking for a LIA (internship paid for by swedish government) in the Web3 space for autumn 2027.
+                If you have a Full-Stack / Blockchain Developer opportunity, please reach out to me via 
+                <a href="https://www.linkedin.com/in/jensrinnelt/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+            </p>
+        </aside>
+
+        <!-- About Me -->
+        <section id="hero-section" class="hero-section">
+            <h2 class="section-title">Jens Rinnelt</h2>
+            <h3 class="section-subtitle">Blockchain Developer | Full-Stack Developer | Web3 Enthusiast</h3>
+            <p class="section-description">
+                I am a passionate Web3 developer with a strong interest in blockchain technology and full-stack development.
+                Currently studying to become a certified Blockchain Developer at 
+                <a href="https://medieinstitutet.se/utbildningar/blockchainutvecklare/" target="_blank" rel="noopener noreferrer">Medieinstitutet</a> in Sweden. 
+            </p>
+            <img src="assets/images/jens-rinnelt-profile-picture.jpg" alt="Jens Rinnelt smiling into the camera" width="200" height="200" loading="lazy">
+        </section>
+
         <!-- Blog Posts -->
         <section id="blog-section" class="blog-section">
             <h2 class="section-title">Blog Posts</h2>
@@ -105,7 +106,7 @@
                 </article>
                 <article class="project">
                     <h3 class="project-title">[WIP] NFT Marketplace</h3>
-                    <img class="project-image" src="" alt="" width="200" height="200" loading="lazy">
+                    <img class="project-image" src="assets/images/nft-marketplace.png" alt="Screenshot of the NFT Marketplace project" width="200" height="200" loading="lazy">
                     <p class="project-description">A platform for creating, buying, and selling NFTs with integrated smart contracts.</p>
                     <ul class="project-tags">
                         <li>Solidity</li>
@@ -133,7 +134,7 @@
         </section>
 
         <!-- Tech Stack -->
-        <section id="tech-stack" class="tech-stack">
+        <section id="tech-stack-section" class="tech-stack-section">
             <h2 class="section-title">Tech Stack</h2>
             <p class="section-subtitle">Technologies I use</p>
             <p class="section-description">Here are the technologies I use in my work.</p>
@@ -191,7 +192,9 @@
         </section>
 
         <!-- Sidebar -->
-        <aside class="sidebar">           
+        <aside class="sidebar">   
+            
+            <!-- Social Links -->
             <div class="sidebar-content">           
                 <h2 class="section-title">Social Links</h2>
                 <p class="section-subtitle">How to connect with me</p>
@@ -203,58 +206,60 @@
                 </ul>
             </div>
         </aside>
+
+        <!-- Contact Form -->
+        <section id="contact-section" class="contact-section">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">How to reach me</p>
+            <p class="section-description">If you have any questions or would like to get in touch, please feel free to use the contact form below.</p>
+            <form class="contact-form" action="mailto:jens.rinnelt@gmx.de" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="url">Website:</label>
+                    <input type="url" id="url" name="url" placeholder="Enter your website URL">
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Phone:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Enter your phone number, incl. country code">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="job">Job Opportunity</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="consent">I agree to be contacted regarding this message.</label>
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <p class="privacy-note">Your information will be kept private and will not be shared with third parties.</p>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>       
+        </section>
     </main>
 
-    <!-- Contact Form -->
-    <section id="contact-section" class="contact-section">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-subtitle">How to reach me</p>
-        <p class="section-description">If you have any questions or would like to get in touch, please feel free to use the contact form below.</p>
-        <form class="contact-form" action="mailto:jens.rinnelt@gmx.de" method="post" enctype="text/plain">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-            </div>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="url">Website:</label>
-                <input type="url" id="url" name="url" placeholder="Enter your website URL">
-            </div>
-
-            <div class="form-group">
-                <label for="tel">Phone:</label>
-                <input type="tel" id="tel" name="tel" placeholder="Enter your phone number, incl. country code">
-            </div>
-
-            <div class="form-group">
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
-                    <option value="" disabled selected>Select a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="project">Project Collaboration</option>
-                    <option value="job">Job Opportunity</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="consent">I agree to be contacted regarding this message.</label>
-                <input type="checkbox" id="consent" name="consent" required>
-                <p class="privacy-note">Your information will be kept private and will not be shared with third parties.</p>
-            </div>
-
-            <button type="submit">Send Message</button>
-        </form>       
-    </section>
 
     <!-- Footer -->
     <footer class="site-footer">

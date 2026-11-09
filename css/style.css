@@ -166,7 +166,10 @@ p {
 }
 
 /* Link Styling */
-a {
+a,
+button,
+input[type="submit"],
+select {
     text-decoration: underline;
     font-weight: 600;
     color: var(--color-text-main, #0f172a);
@@ -175,14 +178,19 @@ a {
         background-color var(--transition-duration, 0.3s) ease;
 }
 
-/* Banner Link Hover & Focus States */
+/* Link / Button Hover & Focus States */
 a:hover {
     color: var(--color-text-main, #0f172a);
     background-color: var(--color-primary-hover, #1fba54);
     border-radius: var(--border-radius, 4px);
 }
 
-a:focus-visible {
+button:hover,
+input[type="submit"]:hover {
+    background-color: var(--color-primary-hover, #1fba54);
+}
+
+:focus-visible {
     outline: 2px solid var(--color-primary-hover, #1fba54);
     outline-offset: 2px;
 }
@@ -237,11 +245,12 @@ a:focus-visible {
     border-radius: var(--border-radius, 4px);
     padding: calc(var(--spacing-unit) * 2);
     margin: calc(var(--spacing-unit) * 2) 0;
+    text-align: center;
 }
 
 /* Banner Link Styling */
 .lia-banner a {
-     color: var(--color-lia-text, #78350f);
+    color: var(--color-lia-text, #78350f);
 }
 
 /* ==========================================================
@@ -453,7 +462,7 @@ a:focus-visible {
 .form-group:has(:required) label::after {
     content: " *";
     font-weight: 700;
-    color: var(--color-primary, #26ce61);
+    color: #dc2626;
 }
 
 /* Form Input, Select, and Textarea Styling */
@@ -464,12 +473,6 @@ a:focus-visible {
     padding: calc(var(--spacing-unit) * 0.75);
     border: 1px solid var(--color-border, #e2e8f0);
     border-radius: var(--border-radius, 4px);
-}
-
-/* Form Input, Select, and Textarea Focus Styling */
-:focus-visible {
-    outline: 2px solid var(--color-primary-hover, #1fba54);
-    outline-offset: 2px;
 }
 
 /* Form Group Styling for Consent Checkbox */
@@ -517,17 +520,6 @@ a:focus-visible {
     transition: background-color var(--transition-duration, 0.3s) ease;
 }
 
-/* Contact Form Button Hover Styling */
-.contact-form button:hover {
-    background-color: var(--color-primary-hover, #1fba54);
-}
-
-/* Contact Form Button Focus Styling */
-.contact-form button:focus-visible {
-    outline: 2px solid var(--color-primary-hover, #1fba54);
-    outline-offset: 2px;
-}
-
 /* ==========================================================
    FOOTER STYLES
    ========================================================== */
@@ -549,4 +541,77 @@ a:focus-visible {
     font-size: calc(var(--font-size) * 0.875);
     color: var(--color-text-muted, #475569);
     margin-bottom: 0;
+}
+
+/* ==========================================================
+RESPONSIVE MEDIA QUERIES (MOBILE-FIRST)
+   ========================================================== */
+
+/* Tablet & Larger Devices (768px and up) */
+@media (min-width: 768px) {
+    /* Header: Row Layout with Title Left & Nav Right */
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
+    }
+
+    .site-header h1 {
+        margin-bottom: 0;
+    }
+
+    /* Hero Section: Side-by-Side Image and Bio */
+    .hero-section {
+        flex-direction: row;
+        text-align: left;
+        gap: calc(var(--spacing-unit) * 4);
+        padding: calc(var(--spacing-unit) * 4);
+    }
+
+    .hero-section img {
+        flex-shrink: 0;
+    }
+
+    .hero-section p {
+        max-width: 100%;
+    }
+}
+
+/* Desktop & Larger Devices (1024px and up) */
+@media (min-width: 1024px) {
+    /* Page Layout: Main Content Left, Sidebar Right */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: calc(var(--spacing-unit) * 4);
+        align-items: start;
+    }
+
+    /* Main Sections Span Left Column, Sidebar in Right Column */
+    .blog-section,
+    .projects-section,
+    .tech-stack-section,
+    .academic-section, 
+    .contact-section {
+        grid-column: 1;
+    }
+
+    .lia-banner {
+        grid-column: 2;
+        grid-row: 1;
+        position: sticky;
+        top: 6rem; /* Adjust based on header height */
+        margin-bottom: 0;
+    }   
+
+    .sidebar {
+        grid-column: 2;
+        grid-row: 2;
+        position: sticky;
+        top: 18rem; /* Adjust based on header height */
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--spacing-unit) * 3);
+        margin: 0;
+    }
 }
