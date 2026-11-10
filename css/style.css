@@ -237,7 +237,7 @@ input[type="submit"]:hover {
 /* Sticky Banner Container */
 .lia-banner {
     position:  sticky;
-    top: 8rem; /* Adjust based on header height */
+    top: 11.5rem; 
     z-index: 999;
     background-color: var(--color-lia-background, #fffbe6);
     color: var(--color-lia-text, #78350f);
@@ -544,8 +544,16 @@ input[type="submit"]:hover {
 }
 
 /* ==========================================================
-RESPONSIVE MEDIA QUERIES (MOBILE-FIRST)
+   RESPONSIVE MEDIA QUERIES (MOBILE-FIRST)
    ========================================================== */
+
+/* Small Devices (Mobile) */
+@media (min-width: 704px) {
+    /* LIA Banner: Adjust Positioning */
+    .lia-banner {
+        top: 7.5rem; 
+    }
+}
 
 /* Tablet & Larger Devices (768px and up) */
 @media (min-width: 768px) {
@@ -563,17 +571,29 @@ RESPONSIVE MEDIA QUERIES (MOBILE-FIRST)
     /* Hero Section: Side-by-Side Image and Bio */
     .hero-section {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         text-align: left;
         gap: calc(var(--spacing-unit) * 4);
         padding: calc(var(--spacing-unit) * 4);
     }
 
+    /* Hero Section Content: Flex Grow to Fill Space */
+    .hero-content {
+        flex: 1;
+    }
+
+    /* Hero Section Image: Prevent Shrinking */
     .hero-section img {
         flex-shrink: 0;
     }
 
     .hero-section p {
         max-width: 100%;
+    }
+
+    .lia-banner {
+        top: 8.5rem; /* Adjust based on header height */
     }
 }
 
@@ -600,7 +620,7 @@ RESPONSIVE MEDIA QUERIES (MOBILE-FIRST)
         grid-column: 2;
         grid-row: 1;
         position: sticky;
-        top: 6rem; /* Adjust based on header height */
+        top: 9.5rem; 
         margin-bottom: 0;
     }   
 
@@ -608,10 +628,22 @@ RESPONSIVE MEDIA QUERIES (MOBILE-FIRST)
         grid-column: 2;
         grid-row: 2;
         position: sticky;
-        top: 18rem; /* Adjust based on header height */
+        top: 22rem; 
         display: flex;
         flex-direction: column;
         gap: calc(var(--spacing-unit) * 3);
         margin: 0;
     }
 }
+
+/* Large Desktop & Larger Devices (1100px and up) */
+@media (min-width: 1100px)  {
+    /* Adjust Sticky Banner and Sidebar Positioning for Larger Screens */
+    .lia-banner {
+        top: 6rem;
+    }   
+
+    .sidebar {
+        top: 18.5rem; 
+    }
+} 

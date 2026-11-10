@@ -46,15 +46,15 @@ Denna webbplats är utvecklad som del av Inlämningsuppgift 1 i kursen **HTML & 
 
 ### ✅ Kravlista
 - [x] En bild med tillhörande korrekta attribut inkl. alt-text, höjd, bredd, etc.
-- [ ] En navigation/meny (behöver ej gå att klicka på)
-- [ ] En "huvudsektion" med själva innehållet på sidan (dvs. `<main>`)
-- [ ] Tre "projekt", dessa kan vara dummies/placeholders om du inte har någonting nu.
+- [x] En navigation/meny (behöver ej gå att klicka på)
+- [x] En "huvudsektion" med själva innehållet på sidan (dvs. `<main>`)
+- [x] Tre "projekt", dessa kan vara dummies/placeholders om du inte har någonting nu.
 - [x] Ett sidofält med information (`<aside>`)
 - [x] Rubriker på minst 3 nivåer, dvs. `<h1>, <h2>, <h3>`
 - [x] En länk till en extern webbplats
-- [ ] Sidan ska fungera på både mobil, tablet och desktop (dvs. ska skala "sömlöst" mellan de olika upplösningarna)
+- [x] Sidan ska fungera på både mobil, tablet och desktop (dvs. ska skala "sömlöst" mellan de olika upplösningarna)
 - [x] Ett kontaktformulär som innehåller "kontaktsökarens": namn, e-post, webbplats, telefonnummer, en dropdown, en checkbox och ett textfält för paragraftext (textarea) och en skicka-knapp
-- [ ] Kontaktuppgifter till dig
+- [x] Kontaktuppgifter till dig
 - [x] En sidfot
 
 ### :card_file_box: Filer
@@ -68,5 +68,8 @@ Denna webbplats är utvecklad som del av Inlämningsuppgift 1 i kursen **HTML & 
 ### :building_construction: Att göra
 - [x] Skiss av projektet
 - [ ] Tillgänglighet och tillgänglighetsanalys (via  Chrome Lighthouse / Firefox Accessibility Tools) & inkludera skärmdumpar på godkänt resultat
-- [ ] Validering via [W3C HTML Validator](https://validator.w3.org/detailed.html)
+- [x] Validering via [W3C HTML Validator](https://validator.w3.org/detailed.html)
+<img width="300" height="300" alt="screenshot W3C validation of HTML" src="assets/validation/validation_HTML.png" />
+<img width="300" height="300" alt="screenshot HTML outline" src="assets/validation/outline.png" />
+<img width="300" height="300" alt="screenshot W3C validation of CSS" src="assets/validation/validation_CSS.png" />
 - [ ] Formatering på koden
