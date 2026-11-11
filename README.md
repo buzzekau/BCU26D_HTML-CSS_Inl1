@@ -1,50 +1,59 @@
 # 🚀 Developer Portfolio & CV
 
-A modern, responsive personal portfolio website built with semantic HTML5 and custom CSS. Designed to showcase developer projects, academic background, and technical blog articles while seeking a *LIA (Internship) for Autumn 2027*. 
+A modern, responsive personal portfolio website built with semantic HTML5 and custom CSS. Designed to showcase developer projects, academic background, and technical blog articles while seeking a _LIA (Internship) for Autumn 2027_.
 
 [Link to Live Site on GitHub Pages](https://buzzekau.github.io/BCU26D_HTML-CSS_Inl1/)
 
 ## Wireframes
+
 I started with creating wireframes for mobile and desktop versions to have a visual orientiation.
 <img width="450" height="1024" alt="mobile wireframe architecture" src="assets/wireframes/mobile-wireframe-architecture.png" />
 <img width="700" height="1024" alt="desktop wireframe architecture" src="assets/wireframes/desktop-wireframe-architecture.png" />
 
-## 🛠️ Tech Stack & Key Features 
+## 🛠️ Tech Stack & Key Features
+
 - **Frontend**: HTML5 (Semantic Architecture), CSS3 (Flexbox & CSS Grid)
 - **Responsive Layout**: Mobile-first design scaling across Mobile, Tablet, and Desktop viewports
 - **Accessibility (a11y)**: Accessible headings hierarchy, screen-reader-ready markup, and ARIA labels
 - **Design System**: Sticky sidebar navigation, full-width hero & contact sections, responsive card reflow
- 
+
 ---
 
 ## 📋 Kursinlämning & Examinationsdokumentation (Medieinstitutet)
 
 ### 📌 Beskrivning
+
 Denna webbplats är utvecklad som del av Inlämningsuppgift 1 i kursen **HTML & CSS (25 yhp)** vid Medieinstitutet.
 
 ### 💡 Syftet
+
 - Komma igång med HTML och CSS
 - Komma igång med git och GitHub samt flödet för att jobba med versionshantering
 - Lära sig att publicera en sajt på GitHub Pages
 - Lära sig att dokumentera i en README och använda Markdown-syntax
 
 ### :mag: Bedömning
+
 **För IG**
+
 - Du har inte med samtliga moment från kravlistan
 - Det finns ingen CSS implementerad
 - Sidan skalar inte sömlöst mellan mobil-, tablet- och desktop-läge
 
 **För G**
+
 - Du har skrivit HTML, men koden innehåller en del brister, t.ex. indenteringsfel eller felaktig syntax.
 - Du har skrivit CSS, men koden innehåller en del brister, t.ex. indenteringsfel eller felaktig syntax.
 
 **För VG**
+
 - Du har tillgänglighetsgranskat din sida
 - Din CSS är genomarbetad och ambitiös. Du visar på en djupare förståelse för CSS.
 - Din HTML är exemplarisk, du har t.ex. gått igenom "vanliga misstag" nedan och visar på en djupare förståelse för HTML och CSS.
 - Du kan motivera ev. lösningar som inte följer praxis. Lämna t.ex. en kommentar i koden om varför du har valt att göra på ett visst sätt.
 
 ### ✅ Kravlista
+
 - [x] En bild med tillhörande korrekta attribut inkl. alt-text, höjd, bredd, etc.
 - [x] En navigation/meny (behöver ej gå att klicka på)
 - [x] En "huvudsektion" med själva innehållet på sidan (dvs. `<main>`)
@@ -58,6 +67,7 @@ Denna webbplats är utvecklad som del av Inlämningsuppgift 1 i kursen **HTML & 
 - [x] En sidfot
 
 ### :card_file_box: Filer
+
 - `.gitignore` - Denna fil används för att ignorera/exkludera vissa systemfiler som inte behöver komma med i versionshanteringen. En sådan bör man alltid ha i sitt repo.
 - `index.html` - För att sidan ska kunna publiceras automatiskt på GitHub Pages är det viktigt att filen heter index.html med ett litet i i början.
 - `style.css` - Denna fil innehåller CSS-formateringen.
@@ -66,10 +76,12 @@ Denna webbplats är utvecklad som del av Inlämningsuppgift 1 i kursen **HTML & 
 - I mappen `.github` finns även instruktioner för hur CoPilot ska ge feedback på koden.
 
 ### :building_construction: Att göra
+
 - [x] Skiss av projektet
-- [ ] Tillgänglighet och tillgänglighetsanalys (via  Chrome Lighthouse / Firefox Accessibility Tools) & inkludera skärmdumpar på godkänt resultat
+- [x] Tillgänglighet och tillgänglighetsanalys (via Chrome Lighthouse / Firefox Accessibility Tools) & inkludera skärmdumpar på godkänt resultat
+      <img width="500" height="500" alt="screenshot accessibility analysis desktop" src="assets/validation/accessibility_analysis_desktop.png" />
 - [x] Validering via [W3C HTML Validator](https://validator.w3.org/detailed.html)
-<img width="300" height="300" alt="screenshot W3C validation of HTML" src="assets/validation/validation_HTML.png" />
-<img width="300" height="300" alt="screenshot HTML outline" src="assets/validation/outline.png" />
-<img width="300" height="300" alt="screenshot W3C validation of CSS" src="assets/validation/validation_CSS.png" />
-- [ ] Formatering på koden
+      <img width="500" height="500" alt="screenshot W3C validation of HTML" src="assets/validation/validation_HTML.png" />
+      <img width="500" height="500" alt="screenshot HTML outline" src="assets/validation/outline.png" />
+      <img width="500" height="500" alt="screenshot W3C validation of CSS" src="assets/validation/validation_CSS.png" />
+- [x] Formatering på koden
