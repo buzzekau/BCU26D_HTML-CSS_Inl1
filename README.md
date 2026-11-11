@@ -1,12 +1,32 @@
 # 🚀 Developer Portfolio & CV
 
-A modern, responsive personal portfolio website built with semantic HTML5 and custom CSS. Designed to showcase developer projects, academic background, and technical blog articles while seeking a _LIA (Internship) for Autumn 2027_.
+A modern, responsive personal portfolio website built with semantic HTML5 and custom CSS. Designed to showcase developer projects, academic background, and blog articles while seeking a _LIA (Internship) for Autumn 2027_. Developed for Medieinstitutet HTML & CSS course. 
 
 [Link to Live Site on GitHub Pages](https://buzzekau.github.io/BCU26D_HTML-CSS_Inl1/)
 
-## Wireframes
+## 🏛️ Technical Architecture & Design Motivations
+
+### 1. Mobile-First & CSS Layout Mechanics
+- **Fluid Grid Cards**: The blog and project sections utilize `grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))` to automatically adapt card columns across viewports without rigid media queries.
+- **2-Column Desktop Grid**: On viewports `&gt;= 1024px`, `<main>` transitions to `display: grid; grid-template-columns: 1fr 320px;`. Main content sections occupy Column 1, while the `.lia-banner` and `.sidebar` stack in Column 2.
+- **Full-Width Breakout**: The `#contact-section` uses `grid-column: 1 / -1` on desktop to span underneath both grid columns, providing a balanced 600px centered contact form.
+
+### 2. Typography & Relative Units
+- In accordance with web accessibility guidelines, all typography uses relative `rem` units and `calc()` expressions based on `:root` variables (`--font-size: 1rem`). Pixel (`px`) units are strictly avoided for text to respect browser font size preferences.
+
+### 3. Accessibility (a11y) Implementation
+- **Screen Reader Helpers**: Hyperlinks contain hidden context spans (`.visually-hidden`) so screen readers announce "Read More about [Article Title]" rather than an isolated "Read More".
+- **Keyboard Navigation**: Interactive elements feature a custom `:focus-visible` ring (`outline: 2px solid; outline-offset: 2px;`) to ensure clear keyboard focus.
+- **Form Association**: All form controls are explicitly associated with `<label>` elements via matching `for` and `id` attributes.
+
+### 4. Accessibility & Syntax Audit 
+- **Chrome Lighthouse**: Achieved a **100/100 Accessibility score** on both desktop and mobile audits. 
+- **W3C HTML & CSS Validation**: Verified error-free via the official W3C Markup and CSS Validation Services.
+
+## 📐 Wireframes
 
 I started with creating wireframes for mobile and desktop versions to have a visual orientiation.
+
 <img width="450" height="1024" alt="mobile wireframe architecture" src="assets/wireframes/mobile-wireframe-architecture.png" />
 <img width="700" height="1024" alt="desktop wireframe architecture" src="assets/wireframes/desktop-wireframe-architecture.png" />
 
@@ -17,9 +37,17 @@ I started with creating wireframes for mobile and desktop versions to have a vis
 - **Accessibility (a11y)**: Accessible headings hierarchy, screen-reader-ready markup, and ARIA labels
 - **Design System**: Sticky sidebar navigation, full-width hero & contact sections, responsive card reflow
 
+## 💡 Key Learnings & Reflections
+- **Modular Layouts with CSS Grid & Flexbox**: Gained a deep practical understanding of combining 1D Flexbox for component-level alignment (e.g., hero bio/image alignment, navigation links) with 2D CSS Grid for page-level multi-column layouts and fluid card reflow (`repeat(auto-fit, minmax(280px, 1fr))`) without relying on rigid media queries.
+- **Accessibility-First Engineering**: Learned that true web accessibility is built into the markup architecture from day one—using relative font units (`rem`) to respect browser zoom settings, high-contrast `:focus-visible` outline rings for keyboard navigation, screen-reader context spans (`.visually-hidden`), and explicit `<label>`-to-`<input>` form associations.
+- **Avoiding Common HTML & CSS Pitfalls**: Systematically avoided common syntax errors identified in the course material, such as pixel-based typography, unnecessary units on zero values (`0px`), skipping heading hierarchy levels (`h1` → `h2` → `h3`), missing image dimension attributes (`width`, `height`, `loading="lazy"`), and ID selector specificity traps in CSS.
+- **Version Control & Automated Deployment**: Mastered Git workflows, conventional commit structures, and automated deployment via GitHub Pages to host a live developer portfolio.
+
+
 ---
 
-## 📋 Kursinlämning & Examinationsdokumentation (Medieinstitutet)
+
+## 📋 Examinationsdokumentation & Betygskriterier (Medieinstitutet)
 
 ### 📌 Beskrivning
 
