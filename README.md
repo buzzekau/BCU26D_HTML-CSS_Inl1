@@ -30,13 +30,6 @@ I started with creating wireframes for mobile and desktop versions to have a vis
 <img width="450" height="1024" alt="mobile wireframe architecture" src="assets/wireframes/mobile-wireframe-architecture.png" />
 <img width="700" height="1024" alt="desktop wireframe architecture" src="assets/wireframes/desktop-wireframe-architecture.png" />
 
-## 🛠️ Tech Stack & Key Features
-
-- **Frontend**: HTML5 (Semantic Architecture), CSS3 (Flexbox & CSS Grid)
-- **Responsive Layout**: Mobile-first design scaling across Mobile, Tablet, and Desktop viewports
-- **Accessibility (a11y)**: Accessible headings hierarchy, screen-reader-ready markup, and ARIA labels
-- **Design System**: Sticky sidebar navigation, full-width hero & contact sections, responsive card reflow
-
 ## 💡 Key Learnings & Reflections
 - **Modular Layouts with CSS Grid & Flexbox**: Gained a deep practical understanding of combining 1D Flexbox for component-level alignment (e.g., hero bio/image alignment, navigation links) with 2D CSS Grid for page-level multi-column layouts and fluid card reflow (`repeat(auto-fit, minmax(280px, 1fr))`) without relying on rigid media queries.
 - **Accessibility-First Engineering**: Learned that true web accessibility is built into the markup architecture from day one—using relative font units (`rem`) to respect browser zoom settings, high-contrast `:focus-visible` outline rings for keyboard navigation, screen-reader context spans (`.visually-hidden`), and explicit `<label>`-to-`<input>` form associations.
@@ -107,9 +100,12 @@ Denna webbplats är utvecklad som del av Inlämningsuppgift 1 i kursen **HTML & 
 
 - [x] Skiss av projektet
 - [x] Tillgänglighet och tillgänglighetsanalys (via Chrome Lighthouse / Firefox Accessibility Tools) & inkludera skärmdumpar på godkänt resultat
-      <img width="500" height="500" alt="screenshot accessibility analysis desktop" src="assets/validation/accessibility_analysis_desktop.png" />
+
+<img width="500" height="500" alt="screenshot accessibility analysis desktop" src="assets/validation/accessibility_analysis_desktop.png" />
+
 - [x] Validering via [W3C HTML Validator](https://validator.w3.org/detailed.html)
-      <img width="500" height="500" alt="screenshot W3C validation of HTML" src="assets/validation/validation_HTML.png" />
+<img width="500" height="500" alt="screenshot W3C validation of HTML" src="assets/validation/validation_HTML.png" />
       <img width="500" height="500" alt="screenshot HTML outline" src="assets/validation/outline.png" />
       <img width="500" height="500" alt="screenshot W3C validation of CSS" src="assets/validation/validation_CSS.png" />
+
 - [x] Formatering på koden
