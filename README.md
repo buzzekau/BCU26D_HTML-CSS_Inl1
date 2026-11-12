@@ -104,8 +104,9 @@ Denna webbplats är utvecklad som del av Inlämningsuppgift 1 i kursen **HTML & 
 <img width="500" height="500" alt="screenshot accessibility analysis desktop" src="assets/validation/accessibility_analysis_desktop.png" />
 
 - [x] Validering via [W3C HTML Validator](https://validator.w3.org/detailed.html)
+
 <img width="500" height="500" alt="screenshot W3C validation of HTML" src="assets/validation/validation_HTML.png" />
-      <img width="500" height="500" alt="screenshot HTML outline" src="assets/validation/outline.png" />
-      <img width="500" height="500" alt="screenshot W3C validation of CSS" src="assets/validation/validation_CSS.png" />
+<img width="500" height="500" alt="screenshot HTML outline" src="assets/validation/outline.png" />
+<img width="500" height="500" alt="screenshot W3C validation of CSS" src="assets/validation/validation_CSS.png" />
 
 - [x] Formatering på koden
